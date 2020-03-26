@@ -1,0 +1,67 @@
+body {
+    background: rgb(111, 111, 111);
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    background: #e8e9e3;
+    width: 750px;
+    margin: auto;
+    box-shadow: 5px 5px 5px gray;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 265px 2fr 50px;
+    grid-gap: 10px;
+    grid-template-areas: "header header header"
+    "nav main main"
+    "footer footer footer";
+}
+.head {
+    grid-area: header;
+    padding: 15px 10px	;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    background: url("../images/recipebackground.png");
+}
+.nav {
+    grid-area: nav;
+    background: hotpink;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 25px;
+}
+.nav a {
+    text-decoration: none;
+}
+.nav li {
+    list-style: none;
+    padding: 3px 0;
+}
+.main {
+    grid-area: main;
+    /*width: 70%;*/
+}
+.main img {
+    float: right;
+    padding: 5px;
+    border-radius: 100px;
+}
+.footer {
+    grid-area: footer;
+    clear: both;
+    background: #595671;
+    text-align: center;
+    font-size: 0.5em;
+    padding: 5px;
+}
+.ext_nav {
+    background-color: rgba(111,111,111,0.5);
+    padding: 10px 10px;
+    margin: 0px -20px;
+}
+.ext_nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #e8e9e3;
+}
